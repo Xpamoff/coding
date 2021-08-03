@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url('background.png');
+}
+.game-object {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-size: 64px 64px;
+}
+.ground {
+    background-image: url('ground.png');
+}
+.tunnel {
+    background-image: url('tunnel.png');
+}
+.stone {
+    background-image: url('stone.png');
+    z-index: 3;
+}
+.heart {
+    background-image: url('heart.png');
+    z-index: 1;
+}
+.player {
+    background-image: url('player.png');
+    z-index: 2;
+}
