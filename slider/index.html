@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider middle">
+        <div class="slides">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+
+            <div class="slide s1"><img src="img/1.jpg" alt="Amsterdam"></div>
+            <div class="slide"><img src="img/2.jpg" alt="London"></div>
+            <div class="slide"><img src="img/3.jpg" alt="Paris"></div>
+            <div class="slide"><img src="img/4.jpg" alt="Berlin"></div>
+        </div>
+
+        <div class="navigation">
+            <label for="r1" class="bar" onclick="onLabel()"></label>
+            <label for="r2" class="bar" onclick="onLabel()"></label>
+            <label for="r3" class="bar" onclick="onLabel()"></label>
+            <label for="r4" class="bar" onclick="onLabel()"></label>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
