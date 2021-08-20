@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.game{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("background.png");
+    background-size: 100%;
+    z-index: -1;
+}
+.game-object{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-size: 64px 64px;
+}
+.player{
+    background-image: url("player.png");
+}
+.ground{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 600px;
+    background-image: url("ground.png");
+    background-size: 100%;
+}

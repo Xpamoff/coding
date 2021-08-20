@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a onclick="dun()" class="a">дада</a>
+
+    <img src="1.jpg" alt="">
+    <img src="2.jpg" alt="">
+    <img src="3.jpg" alt="">
+    <img src="4.jpg" alt="" id="4cart">
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        window.to = {};
+        to.elem = $('#4cart');
+        let topa = to.elem.offset().top;
+        function dun(){
+            $('body, html').animate({scrollTop : topa}, 1500);
+        }
+
+    </script>
+</body>
+</html>

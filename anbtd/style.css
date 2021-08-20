@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+body{
+    background-color: #575757;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    margin: 60px;
+    overflow: hidden;
+    border: 10px solid #fff;
+    border-radius: 10px;
+    width: 1100px;
+    height: 600px;
+}
+.navigation{
+    position: sticky;
+    bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.bar{
+    width: 30px;
+    height: 8px;
+    background-color: #ddd;
+    opacity: .6;
+    transition: all .4s ease;
+    cursor: pointer;
+    margin: 6px;
+    border-radius: 10px;
+}
+.bar:hover{
+    opacity: .8;
+    transform: scale(1.1);
+}
+.slides{
+    display: flex;
+    flex-direction: row;
+    width: 400%;
+    height: 100%;
+}
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+    background-size: 100%;
+}
+.s1{
+    background-image: url("img/1.jpg");
+}
+.s2{
+    background-image: url("img/2.jpg");
+}
+.s3{
+    background-image: url("img/3.jpg");
+}
+.s4{
+    background-image: url("img/4.jpg");
+}
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -25%;
+}
+#r3:checked ~ .s1{
+    margin-left: -50%;
+}
+#r4:checked ~ .s1{
+    margin-left: -75%;
+}
