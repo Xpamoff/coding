@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.png" alt=""></div>
+        <div class="nav">
+            <a class="toPlay">К игре</a>
+            <a class="authors">Об авторах</a>
+            <a class="support">Поддержать</a>
+        </div>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+
+            <div class="slide s1"><div class="text">Игра</div></div>
+            <div class="slide"><img src="img/2.jpg" alt=""></div>
+            <div class="slide"><img src="img/3.jpg" alt=""></div>
+            <div class="slide"><img src="img/4.jpg" alt=""></div>
+        </div>
+        <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+        </div>
+    </div>
+
+    <div class="opening">
+        <div class="enterName">Введите имя:</div>
+        <input type="text" placeholder="Ваше имя" class="name_input">
+        <button disabled class="play_btn">Играть</button>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
