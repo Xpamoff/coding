@@ -23,7 +23,6 @@ $(document).ready(()=>{
 
     window.heart = {};
 
-
     player.score = 0;
     player.name = localStorage.getItem("character_name");
     $('.name').html("Имя: " + player.name);
@@ -148,7 +147,7 @@ $(document).ready(()=>{
             if(!isOnJump) player.elem.css({'background-image' : `url("Biker_run.png")`})
 
         }
-        if(e.keyCode == 37){
+        else if(e.keyCode == 37){
             goLeft = true;
             if(!isOnJump) player.elem.css({'background-image' : `url("Biker_run.png")`});
         }
@@ -165,7 +164,7 @@ $(document).ready(()=>{
             if(!isOnJump) player.elem.css({'background-image' : `url("Biker_idle.png")`})
 
         }
-        if(e.keyCode == 37){
+        else if(e.keyCode == 37){
             goLeft = false;
             if(!isOnJump) player.elem.css({'background-image' : `url("Biker_idle.png")`})
         }
