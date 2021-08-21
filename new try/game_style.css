@@ -1,0 +1,40 @@
+@font-face {
+    src: url("Montserrat-SemiBold.ttf");
+    font-family: Montserrat;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+.game{
+    background-image: url("Background.png");
+    background-size: 100%;
+    width: 576px;
+    height: 324px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 10px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 4px rgba(0,0,0,.05);
+    overflow: hidden;
+}
+.game-object{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+}
+.player{
+    background-image: url("Biker.png");
+    z-index: 3;
+}
+.grounds{
+    background-image: url("IndustrialTile_64.png");
+}
+.heart{
+    background-image: url("img/heart.png");
+    z-index: 2;
+}
