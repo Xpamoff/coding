@@ -21,14 +21,34 @@
     box-shadow: 0 0 3px 4px rgba(0,0,0,.05);
     overflow: hidden;
 }
+.title{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: white;
+}
 .game-object{
     position: absolute;
     width: 32px;
     height: 32px;
     background-size: 32px 32px;
 }
+.rock{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-repeat: repeat;
+    background-image: url("img/stone.png");
+    z-index: 5;
+}
 .player{
-    background-image: url("Biker.png");
+    background-image: url("Biker_idle.png");
+    background-size: auto;
+    background-position-x: 0;
+    background-position-y: -16px;
     z-index: 3;
 }
 .grounds{
