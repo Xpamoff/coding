@@ -9,26 +9,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="slider middle">
+    <div class="slider">
         <div class="slides">
             <input type="radio" name="r" id="r1" checked>
             <input type="radio" name="r" id="r2">
             <input type="radio" name="r" id="r3">
-            <input type="radio" name="r" id="r4">
 
-            <div class="slide s1"><img src="img/1.jpg" alt="Amsterdam"></div>
-            <div class="slide"><img src="img/2.jpg" alt="London"></div>
-            <div class="slide"><img src="img/3.jpg" alt="Paris"></div>
-            <div class="slide"><img src="img/4.jpg" alt="Berlin"></div>
+            <div class="slide s1"><div class="text">Амстердам</div></div>
+            <div class="slide"><img src="img/2.jpg" alt=""></div>
+            <div class="slide"><img src="img/3.jpg" alt=""></div>
         </div>
-
         <div class="navigation">
-            <label for="r1" class="bar" onclick="onLabel()"></label>
-            <label for="r2" class="bar" onclick="onLabel()"></label>
-            <label for="r3" class="bar" onclick="onLabel()"></label>
-            <label for="r4" class="bar" onclick="onLabel()"></label>
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
         </div>
     </div>
+    <script src="jquery-3.4.1.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
